@@ -1,0 +1,83 @@
+import Vue from 'vue'
+import {
+  Button,
+  Form,
+  FormItem,
+  Input,
+  Message,
+  Container,
+  Header,
+  Aside,
+  Main,
+  Row,
+  Col,
+  Menu,
+  MenuItemGroup,
+  Submenu,
+  MenuItem,
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  TableColumn,
+  Table,
+  Switch,
+  Pagination,
+  Dialog,
+  MessageBox,
+  Select,
+  Option,
+  Tree,
+  Tag,
+  Alert,
+  Steps,
+  Step,
+  Tabs,
+  TabPane,
+  Cascader,
+  CheckboxGroup,
+  Checkbox,
+  Upload,
+  Timeline,
+  TimelineItem
+} from 'element-ui'
+Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
+Vue.use(Timeline)
+Vue.use(TimelineItem)
+Vue.use(Upload)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Cascader)
+Vue.use(TabPane)
+Vue.use(Tabs)
+Vue.use(Step)
+Vue.use(Steps)
+Vue.use(Steps)
+Vue.use(Alert)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Option)
+Vue.use(Select)
+Vue.use(Dialog)
+Vue.use(Pagination)
+Vue.use(Switch)
+Vue.use(TableColumn)
+Vue.use(TableColumn)
+Vue.use(Table)
+Vue.use(Button)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Input)
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Main)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Menu)
+Vue.use(MenuItemGroup)
+Vue.use(Submenu)
+Vue.use(MenuItem)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Card)
