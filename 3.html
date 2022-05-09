@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>mydemo</title>
+        <style type="text/css">
+            body{margin:0;padding:0;}
+            html,body{height:100%;}
+            #outer {width:300px;margin:10px auto;text-align: center;overflow:hidden;zoom:1;}
+            #outer div {float:left;width:90px;height:90px;background:black;
+                margin:15px 10px 15px 0;overflow:hidden;zoom:1;}
+            
+        </style>
+        <script type="text/javascript">
+            window.onload = function() {
+            var oDiv = document.getElementsByTagName("div");
+                // alert(oDiv.index);
+            var oBtn = document.getElementById("btn");
+                oBtn.onclick = function (){
+                    for (var i=1;i<oDiv.length;i++){
+                    oDiv[i].style.background="red";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+       <div id="outer">
+          <input type="button" id ="btn" value="点击将div变成红色" /><br />
+           <div></div>
+           <div></div>
+           <div></div>
+       </div>
+    </body>
+</html>

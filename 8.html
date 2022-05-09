@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="num">
+    <button onclick="but()">查询</button>
+    <script>
+        var num = document.querySelector('.num')
+        function but() {
+            if (num.value < 10) {
+                alert('这是一位数')
+            } else if (num.value > 10) {
+                if (num.value < 100) {
+
+                    alert('是的这是两位数')
+                } else {
+                    alert('两位数以上了')
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

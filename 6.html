@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="inp1">
+    <input type="text" class="inp2">
+    <button onclick="max()">最大数字为</button>
+    <p>最大数字为<span class="num"></span></p>
+    <script>
+        var inp1 = document.querySelector('.inp1')
+        var inp2 = document.querySelector('.inp2')
+        var num = document.querySelector('.num')
+        console.log(inp1);
+        console.log(inp2);
+        console.log(num);
+        function max(){
+            console.log();
+            if(inp1.value+0 > inp2.value+0){
+                num.innerHTML = inp1.value
+            }else{
+                num.innerHTML = inp1.value
+            }
+        }
+    </script>
+</body>
+</html>
