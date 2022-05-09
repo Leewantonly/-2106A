@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		.box {
+			width: 300px;
+			height: 300px;
+			background-color: #000000;
+			color: #b2b2b2;
+		}
+	</style>
+	<body>
+		<a style="background-color: red"></a>
+		<p>属性名:<input type="text" class="name" /></p>
+		<p>属性值:<input type="text" class="value" /></p>
+		<p>
+			<button type="button" class="ok">确定</button>
+			<button type="button" class="reset">重置</button>
+		</p>
+		<div class="box">
+			请在上面输入框输入属性名与属性值改变div的样式
+		</div>
+	</body>
+	<script type="text/javascript">
+		let box = document.querySelector('.box')
+		let name = document.querySelector('.name')
+		let val = document.querySelector('.value')
+		let ok = document.querySelector('.ok')
+
+		function fn(x,y) {
+			box.style[x] = y
+		}
+		ok.onclick = function() {
+			let x = name.value
+			let y = val.value
+			fn(x,y)
+		}
+	</script>
+</html>
